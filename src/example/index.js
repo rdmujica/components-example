@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Button from 'the-best-button2'
+import { Button, Spinner } from 'components3000'
 
 const Example = () => {
   const [loading, setLoading] = useState(false)
@@ -11,6 +11,13 @@ const Example = () => {
       <Button onClick={handleClick} loading={loading}>
         {loading ? 'Click me again!' : 'Click me!'}
       </Button>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+        <Spinner />
+      </div>
     </div>
   )
 }
